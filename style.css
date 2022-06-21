@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+}
+
+#card-place {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    height: 250px;
+    background: lightgreen;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px 0px 50px;
+    border: lightgray 1px solid;
+    box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;
+
+}
+
+.id-pokemon {
+    background: whitesmoke;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.card h2 {
+    text-align: center;
+    margin: 0 auto;
+    color: rgb(80, 80, 80);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cabecalho h1 {
+    font-size: 90px;
+    color: gray;  
+    margin-bottom: 20px;
+}
+
+.cabecalho nav {
+    display: flex;
+    gap: .3rem;
+    justify-content: center;
+}
+
+#type {
+    margin-right: 5px;
+    height: 30px;
+}
+
+.nav2 {
+    margin-top: 10px;
+}
+
+.stylebutton {
+    padding: 6px;
+}
+
+.inputsize {
+    padding: 5px;
+    border-radius: 0.3rem;
+    margin-top: 10px;
+}
+
+.card-image {
+    height: 40%;
+    width: 40%;
+    margin: 0 auto;
+}   
+
+.card-type {
+    margin: auto;
+    background-color: white;
+    border-radius: 1rem;
+    padding: 4px;
+    color: gray;
+    font-size: 15px;
+}
+
+.card {
+    transition: transform 1s;
+}

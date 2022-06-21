@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1>Pokédex</h1>
+        <nav>
+            <label for="type">
+                <select name="Types" id="type" class="types" required>
+                    <option value="Types">Types</option>
+                    <option value="Grass">Grass</option>
+                    <option value="Water">Water</option>
+                    <option value="Fire">Fire</option>
+                    <option value="Eletric">Eletric</option>
+                    <option value="Psychic">Psychic</option>
+                    <option value="Ghost">Ghost</option>
+                    <option value="Poison">Poison</option>
+                    <option value="Fighter">Fighter</option>
+                    <option value="Normal">Normal</option>
+                    <option value="BUG">Bug</option>
+                </select>
+            </label>
+            <button class="stylebutton">Filter by type</button>
+            <button class="stylebutton">Reset</button>
+        </nav>
+        <nav>
+            <input type="text" placeholder="Enter Pokémon Name" class="inputsize">
+        </nav>
+    </header>
+    <main id="card-place">       
+    </main>
+        
+    <script src="./script.js"></script>
+</body>
+</html>
