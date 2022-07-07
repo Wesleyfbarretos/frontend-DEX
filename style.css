@@ -1,24 +1,64 @@
 * {
     margin: 0;
 }
-
+body {
+    background: cornsilk;
+}
 #card-place {
-    position: relative;
     display: flex;
     flex-wrap: wrap;
+    height: fit-content;
+    width: 80vw;
+    gap: 2rem;
+    background: cornsilk;
+    position: relative;
+    justify-content: center;
+    margin: auto;
+    position: relative;
 }
+
+
 
 .card {
     width: 200px;
-    height: 250px;
-    background: lightgreen;
+    height: 260px;
     border-radius: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    margin: 50px 0px 0px 50px;
     border: lightgray 1px solid;
     box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;
+    transform-style: preserve-3d;
+    transition: all ease-in .5s;
+}
 
+.card:hover {
+    animation: card-hover 0.5s linear both;
+}
+
+@keyframes card-hover {
+    0% {
+      transform: scale(1) rotate3d(-1, 1, 0, 0deg);
+    }
+    50% {
+      transform: scale(0.4) rotate3d(-1, 1, 0, -90deg);
+    }
+    50% {
+        transform: scale(0.8) rotate3d(5, 1, 0, -120deg);
+      }
+    100% {
+      transform: scale(1) rotate3d(1, 10, 0, -180deg);
+    }
+  }
+
+.back-card {
+    transform: rotateY(180deg);
+}
+
+
+.front-card, .back-card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .id-pokemon {
@@ -27,11 +67,65 @@
     text-align: center;
 }
 
-.card h2 {
+.front-card h2, .back-card h2 {
     text-align: center;
-    margin: 0 auto;
-    color: rgb(80, 80, 80);
+    margin: 10px auto;
+    font-family: 'Cinzel', serif;
+    color: rgb(80, 80, 80) ;
 }
+
+
+.back-card a:link {
+    text-decoration: none;   
+}
+
+.back-card a {
+    color:rgb(80, 80, 80);
+}
+
+.back-card a:hover {
+    color: white;   
+}
+
+.card-image {
+    display: flex;
+    justify-content: center;
+}
+
+.card-image img {
+    height: 50%;
+    width: 50%;
+}   
+
+.types-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.card-type, .card-second-type {
+    border-radius: .5rem;
+    width: fit-content;
+    padding: 4px;
+    font-size: 15px;
+}
+
+
+
+.card-spell {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 30px; 
+    border-radius: 1rem;
+    border: 2px solid gray;
+    color: black;
+    width: fit-content;
+    justify-content: center;
+    width: 90%;
+    padding: 3px;
+    margin: 20px auto;
+    font-family: sans-serif;
+}
+
 
 .cabecalho {
     display: flex;
@@ -69,23 +163,16 @@
     padding: 5px;
     border-radius: 0.3rem;
     margin-top: 10px;
+    margin-bottom: 50px;
 }
 
-.card-image {
-    height: 40%;
-    width: 40%;
-    margin: 0 auto;
-}   
-
-.card-type {
-    margin: auto;
-    background-color: white;
-    border-radius: 1rem;
-    padding: 4px;
-    color: gray;
-    font-size: 15px;
+#loader {
+    display: flex;
+    flex-direction: column;
+    margin-top: auto;
+    align-items: center;
+    justify-content: flex-end;
+    height: 3vh;
+    
 }
-
-.card {
-    transition: transform 1s;
-}
+ 

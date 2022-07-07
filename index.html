@@ -5,36 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Koulen&family=Oleo+Script+Swash+Caps&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Koulen&family=Oleo+Script+Swash+Caps&family=Pacifico&family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Fredericka+the+Great&family=Koulen&family=Oleo+Script+Swash+Caps&family=Pacifico&family=Rubik+Puddles&family=Special+Elite&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Koulen&family=Oleo+Script+Swash+Caps&family=Pacifico&family=Rubik+Puddles&family=Special+Elite&display=swap" rel="stylesheet">
+    <title>POKÉDEX</title>
 </head>
 <body>
     <header class="cabecalho">
-        <h1>Pokédex</h1>
+        <h1 style="font-family: 'Rubik Puddles', cursive; color: black; font-size: 150px;">Pokédex</h1>
         <nav>
             <label for="type">
                 <select name="Types" id="type" class="types" required>
-                    <option value="Types">Types</option>
-                    <option value="Grass">Grass</option>
-                    <option value="Water">Water</option>
-                    <option value="Fire">Fire</option>
-                    <option value="Eletric">Eletric</option>
-                    <option value="Psychic">Psychic</option>
-                    <option value="Ghost">Ghost</option>
-                    <option value="Poison">Poison</option>
-                    <option value="Fighter">Fighter</option>
-                    <option value="Normal">Normal</option>
-                    <option value="BUG">Bug</option>
                 </select>
             </label>
-            <button class="stylebutton">Filter by type</button>
-            <button class="stylebutton">Reset</button>
+            <button class="stylebutton" id="filter-button">Filter by type</button>
+            <button class="stylebutton" id="reset-button">Reset</button>
         </nav>
         <nav>
-            <input type="text" placeholder="Enter Pokémon Name" class="inputsize">
+            <input type="text" placeholder="Enter Pokémon Name" class="inputsize" id="searchbar">
         </nav>
     </header>
-    <main id="card-place">       
-    </main>
+    <main id="card-place"></main>
+    <div id="loader"></div>
+    
         
     <script src="./script.js"></script>
 </body>
