@@ -11,6 +11,7 @@
     });
 })()
  */
+
 const cardColor = new Map()
     
     cardColor.set("FIRE", "orange")
