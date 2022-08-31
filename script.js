@@ -139,7 +139,7 @@ searchBar.addEventListener("keyup", (e) => {
 
 
 
-let resultNext = "https://pokeapi.co/api/v2/pokemon?limit=24"
+let resultNext = "http://localhost:3000/pokemon"
 
 
 
@@ -265,7 +265,7 @@ function createCard(data) {
 
     /*const cardSpell = document.createElement("div")
     cardSpell.classList.add("card-spell")
-    const spellResult = data.abilities.map(ability => {
+    const spellRe   sult = data.abilities.map(ability => {
         const spellWay = ability.ability.name
         return spellWay
     })
