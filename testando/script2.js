@@ -75,11 +75,6 @@ const cardColor = new Map()
         cardBackImgDIV.append(cardBackImg)
         cardBackImg.src = data.sprites.back_shiny
         card.append(cardBackImgDIV)
-    
-        /*const cardType = document.createElement("div")
-        cardType.classList.add("card-type")
-        cardType.textContent = data.types[0].type.name.toUpperCase()
-        card.append(cardType)*/
 
     const cardType = data.types[0].type.name.toUpperCase()
 

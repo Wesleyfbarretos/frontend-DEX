@@ -37,31 +37,6 @@ main {
     font-size: 30px;
 }
 
-/*.card-type {
-    margin: 30px auto;
-    background-color: white;
-    border-radius: 1rem;
-    padding: 4px;
-    color: gray;
-    font-size: 20px;
-    width: fit-content;
-}*/
-
-/*.card-spell {
-    font-size: 16px;
-    text-align: center;
-    margin-top: 30px; 
-    border-radius: 1rem;
-    border: 2px solid gray;
-    color: black;
-    width: fit-content;
-    justify-content: center;
-    width: 90%;
-    padding: 3px;
-    margin: 20px auto;
-    font-family: sans-serif;
-}*/
-
 .card-img-front {
     width: 60%;
     height: 35%;

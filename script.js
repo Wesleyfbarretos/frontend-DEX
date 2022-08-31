@@ -1,17 +1,3 @@
-/* (async function findPokemonData () {
-    const result = await fetch("https://pokeapi.co/api/v2/pokemon?limit=151")
-    const {results} = await result.json()
-    const pokemons =  await Promise.all(results.map(async element => {
-        const forResult = await fetch(element.url)
-        const forData = await forResult.json()  
-        return forData    
-    })) 
-    pokemons.forEach(pokemon => { 
-        createCard(pokemon)     
-    });
-})()
- */
-
 const cardColor = new Map()
     
     cardColor.set("FIRE", "orange")
@@ -260,17 +246,6 @@ function createCard(data) {
         cardSecondType.textContent = data.types[1].type.name.toUpperCase()
         typesContainer.append(cardSecondType)
     }
-    
-            // CARD SPELL
-
-    /*const cardSpell = document.createElement("div")
-    cardSpell.classList.add("card-spell")
-    const spellRe   sult = data.abilities.map(ability => {
-        const spellWay = ability.ability.name
-        return spellWay
-    })
-    cardSpell.innerHTML = (spellResult) 
-    backCard.append(cardSpell) */
 
     card.classList.add(cardType.textContent.toLowerCase())
     const cardPlace = document.querySelector("#card-place")
@@ -288,25 +263,6 @@ function createCard(data) {
         cardSecondType.style.background = colorY
         cardSecondType.style.boxShadow = "1px 1px 15px 0px rgba(0, 0, 0, 0.2)"
     }
-// TIRAR E FAZER FICAR 0(1) COM GET - DIVERTIDO
-   /* for(let t of cardColor) {
-        if(cardType.textContent === t[0]) {
-            cardType.style.backgroundColor = t[1]
-            styleTypeone = t[1]
-           }
-        if(cardSecondType.textContent === t[0]) {
-            cardSecondType.style.backgroundColor = t[1]
-            styleTypetwo = t[1]
-        }
-    }
-    function backgroundCard(data1, data2) {
-         card.style.background = `linear-gradient(45deg,${data1},${data2})`
-         if(!data2) {
-            card.style.background =`linear-gradient(45deg,${data1}, transparent)`
-         }
-         
-    }
-    backgroundCard(styleTypeone, styleTypetwo)*/
 }
 
 
